@@ -224,13 +224,4 @@ The decision engine combines multiple data sources:
 
 ---
 
-## 📄 **License & Credits**
-
-**Version**: 2.0  
-**Last Updated**: 2026
-**Developer**: Advanced AI Systems  
-**License**: MIT License  
-
----
-
 *🏠 Deal Finder AI - Transforming Real Estate Analysis with Hybrid Intelligence*
