@@ -208,7 +208,7 @@ with tab1:
         
         if uploaded_file is not None:
             image = Image.open(uploaded_file)
-            st.image(image, caption="Uploaded Property Image", use_container_width=True)
+            st.image(image, caption="Uploaded Property Image", width='stretch')
             temp_path = "temp_property_img.png"
             image.save(temp_path)
     
@@ -378,7 +378,7 @@ with tab1:
                             height=400,
                             showlegend=True
                         )
-                        st.plotly_chart(fig_position, use_container_width=True)
+                        st.plotly_chart(fig_position, width='stretch')
                     
                     with col_graph2:
                         st.markdown("#### 📊 Investment Return Projection")
@@ -430,7 +430,7 @@ with tab1:
                             height=400,
                             showlegend=True
                         )
-                        st.plotly_chart(fig_roi, use_container_width=True)
+                        st.plotly_chart(fig_roi, width='stretch')
                     
                     # Graph 3: Property Health & Value Analysis
                     st.markdown("#### 🏠 Property Health & Value Correlation")
@@ -490,7 +490,7 @@ with tab1:
                             showlegend=True
                         )
                         
-                        st.plotly_chart(fig_health, use_container_width=True)
+                        st.plotly_chart(fig_health, width='stretch')
                     
                     st.markdown("---")
                     
@@ -684,14 +684,14 @@ with tab2:
         st.markdown("#### 💰 Price Distribution")
         fig_price = px.histogram(df, x='price', nbins=30, title="Property Price Distribution")
         fig_price.update_layout(template="plotly_dark")
-        st.plotly_chart(fig_price, use_container_width=True)
+        st.plotly_chart(fig_price, width='stretch')
         
         # Size vs Price Scatter
         st.markdown("#### 📊 Size vs Price Analysis")
         fig_scatter = px.scatter(df, x='size', y='price', color='condition', 
                               title="Property Size vs Price by Condition")
         fig_scatter.update_layout(template="plotly_dark")
-        st.plotly_chart(fig_scatter, use_container_width=True)
+        st.plotly_chart(fig_scatter, width='stretch')
         
         # Condition Analysis
         st.markdown("#### 🏠 Condition Analysis")
@@ -699,7 +699,7 @@ with tab2:
         fig_pie = px.pie(values=condition_counts.values, names=condition_counts.index, 
                          title="Property Condition Distribution")
         fig_pie.update_layout(template="plotly_dark")
-        st.plotly_chart(fig_pie, use_container_width=True)
+        st.plotly_chart(fig_pie, width='stretch')
 
 # Tab 3: Property Database
 with tab3:
@@ -728,7 +728,7 @@ with tab3:
         
         # Display results
         st.markdown(f"#### 📋 Found {len(filtered_df)} Properties")
-        st.dataframe(filtered_df, use_container_width=True)
+        st.dataframe(filtered_df, width='stretch')
         
         # Property details
         if len(filtered_df) > 0:
