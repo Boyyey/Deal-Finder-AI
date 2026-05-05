@@ -51,7 +51,7 @@ Deal Finder AI is a cutting-edge real estate analysis tool that combines **Hybri
 ### **Installation**
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Boyyey/Deal-Finder-AI
 cd Deal-Finder-AI
 
 # Install dependencies
