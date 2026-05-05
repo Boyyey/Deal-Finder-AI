@@ -51,7 +51,7 @@ Deal Finder AI is a cutting-edge real estate analysis tool that combines **Hybri
 ### **Installation**
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Boyyey/Deal-Finder-AI
 cd Deal-Finder-AI
 
 # Install dependencies
@@ -221,15 +221,6 @@ The decision engine combines multiple data sources:
 - **Market Prediction**: Future value forecasting
 - **Integration APIs**: Real estate platform connections
 - **Blockchain Integration**: Secure property records
-
----
-
-## 📄 **License & Credits**
-
-**Version**: 2.0  
-**Last Updated**: 2026
-**Developer**: Advanced AI Systems  
-**License**: MIT License  
 
 ---
 
